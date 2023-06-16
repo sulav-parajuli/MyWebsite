@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/arrow.css">
     <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/buttonanimation.css">
 </head>
 
 <body>
@@ -61,11 +62,8 @@
                  <a href="https://www.linkedin.com/in/sulav-parajuli-658388195/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="mailto:sulavparajuli82@gmail.com" class="mail"><i class="fa-solid fa-envelope"></i></a>
             </div>
-            <div class="boxes">
-            <div class="text-box"><a href="#about">About</a></div>
-            <div>|</div>
-            <div class="text-box"><a href="#portfolio">PortFolio</a></div>
-            </div>
+                <a href="#about"><button class="coolBeans">About</button></a>
+                <a href="#portfolio"><button class="coolBeans">PortFolio</button></a>
            <div class="space"></div>
             <a href="#about"><div class="arrow">
                 <span></span>
@@ -84,11 +82,8 @@
                 <p>Developer</p>
                 <p>
                     I am a web developer and programmer with strong expertise in front-end techniques, designing UI and graphics. I have created numerous web pages, web-based applications, and mobile applications. Additionally, I am an undergraduate IT student hailing from Pokhara, Nepal. Currently, I am pursuing a Bachelor of Science in Computer Science and Information Technology program at Tribhuvan University, Nepal, studying at Mount Annapurna Campus in Pokhara. Apart from my studies, I actively engage in web designing and graphics designing, dedicating my time to enhancing these skills.</p>
-                    <div class="boxes">
-                        <div class="text-box"><a href="#contact">Hire Me</a></div>
-                         <div>|</div>
-                        <div class="text-box"><a href="assets/other/SulavC.pdf" download>My Resume</a></div>
-                    </div>
+                    <a href="#contact"><button class="coolBeans">Hire Me</button></a>
+                    <a href="assets/other/SulavC.pdf" download><button class="coolBeans">My Resume</button></a>
             </div>
         </section>
         
@@ -182,7 +177,7 @@
         <section id="portfolio">
             <p id="section-text"><b>PORTFOLIO</b></p>
                 <h2 id="bottom-gap" style="text-align: center;">See my works</h2>
-                    <div class="services-type">
+                    <div class="type">
                       <ul id="portfolio-filters">
                         <li data-filter="*" class="filter-active" onclick="list(0)">All</li>
                         <li data-filter=".filter-web" onclick="list(1)">Web</li>
@@ -233,12 +228,12 @@
                         </div>
                       </div>
             </div>
-            <a href="#" class="btn btn-primary" id="submit">Load More</a>
+            <a href="#"><button class="coolBeans">Load More</button></a>
         </section>
         <section id="services" class="reveal">
             <p id="section-text"><b>SERVICES</b></p>
                 <h2 id="bottom-gap" style="text-align: center;">What can i do?</h2>
-            <div id="services-type">
+            <div id="type">
                 <div id="des">
                     <h3>
                         <!-- <i class="fa-solid fa-file-code"></i> -->
@@ -256,7 +251,7 @@
                     <p>I possess the ability to design responsive websites and mobile applications with flexible layouts for my clients, incorporating creative ideas and utilizing various platforms such as WordPress, JavaScript, Bootstrap,flutter and more.</p> 
                 </div>
                 </div>
-                <div id="services-type">
+                <div id="type">
                     <div id="des">
                         <h3>
                             <!-- <i class="fa-solid fa-gears"></i> -->
@@ -292,8 +287,6 @@
                         <input type="text" required > 
                         <label>Enter Last Name</label>
                       </div>
-                </div>
-                <div class="form-controller">
                     <div class="input-field email">
                         <input type="text" required > 
                         <label>Email</label>
@@ -302,12 +295,12 @@
                         <input type="text" required> 
                         <label>Subject</label>
                       </div>
-                </div>
-                <div class="input-field message">
+                   <div class="input-field message">
                     <textarea required ></textarea> 
                     <label>Your Message</label>
                   </div>
-                  <button type="submit" class="btn btn-primary" id="submit">Send Message</button>
+                </div>
+                  <button type="submit" class="coolBeans">Send Message</button>
             </form>
         </section>
         <!--Also create testimonial,blog,contact sections-->

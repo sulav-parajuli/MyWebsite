@@ -1,0 +1,45 @@
+.coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  padding: 1% 2%;
+  color: #00a2ed;
+  /* font-weight: 100; */
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.3s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.coolBeans a:hover{
+    color:#fff;
+}
+#portfolio a .coolBeans{
+    top: 15px;
+    display: inline-block;
+}
+.coolBeans::after {
+  background-color: #00a2ed;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.3s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.coolBeans:hover {
+  border: 2px solid transparent;
+  color: #fff;
+  transform: scale(1.05);
+  will-change: transform;
+}

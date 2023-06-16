@@ -20,7 +20,7 @@
 /*Universal Selector*/
 
 * {
-    margin: 0.5%;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -62,6 +62,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1%;
 }
 
 p {
@@ -138,10 +139,6 @@ textarea {
 
 
 /*Class Selector*/
-.boxes{
-    display: flex;
-    justify-content: center;
-}
 
 .content{
     margin:0;
@@ -203,6 +200,9 @@ textarea {
     padding-top: 0.5%;
     margin: 0;
 }
+.portfolio-container{
+    gap: 15px;
+}
 
 .mail {
     color: #237d7b;
@@ -215,13 +215,6 @@ textarea {
 
 .moon {
     color: #00a2ed;
-}
-
-.text-box{
-    border: 1px solid #999;
-    width: 150px;
-    border-radius: 5px;
-    text-align: center;
 }
 
 .typed {
@@ -238,8 +231,8 @@ textarea {
 }
 
 .space{
-    width:250px;
-    height:250px;
+    width:200px;
+    height:200px;
 }
 
 
@@ -247,16 +240,13 @@ textarea {
 
 #about {
     padding-left: 3%;
+    padding-right: 2%;
+    padding-bottom: 2%;
 }
 
 #about_details{
     padding-left: 3%;
     justify-content: space-between;
-}
-
-#address {
-    align-items: flex-start;
-    width: 50%;
 }
 
 #des {
@@ -282,7 +272,7 @@ textarea {
 }
 
 #profile {
-    padding-top: 5%; 
+    padding-top: 7%; 
 }
 
 #profile-des{
@@ -304,12 +294,12 @@ textarea {
 #services,#portfolio,#contact{
     display: block;
     text-align: center;
-    padding-left: 3%;
-    width:95%
+    padding: 3%;
 }
 
-#services-type,#portfolio-type{
+#type{
     display:flex;
+    gap: 20px;
 }
 
 #skills{
@@ -317,33 +307,17 @@ textarea {
     padding-left: 3%;
 }
 
-#slide {
-    width: 5px;
-    height: 100%;
-    align-items: center;
-}
-
 #soc-link {
     text-align: center;
     display: flex;
     justify-content: center;
+    gap:2%;
+    padding-bottom: 1%;
 }
-
-#submit{
-        border: 1px solid #007bff;
-        background-color: #007bff;
-        color:#fff;
-        width: 150px;
-        border-radius: 5px;
-        text-align: center;
-        box-shadow: 4px 3px 2px skyblue;
-        justify-content: center;
-    
-}
-
+/* 
 #text {
     border-radius: 5px;
-}
+} */
 
 
 /*Media Queries*/
@@ -362,6 +336,9 @@ textarea {
     .list ul{
         display: none;
     }
+    .col-md-6{
+        width:80%;
+    }
     .list-group .moon{
         display: block;
     }
@@ -372,12 +349,12 @@ textarea {
     #profile-img,
     #about,
     #details,
-    #address,
     #des,#skills,#services {
-        width: 95%;
+        display: block;
+        width: auto;
         align-items: center;
     }
-    #services-type,#portfolio-type{
+    #type{
         display:block;
     }
     section {
@@ -386,29 +363,23 @@ textarea {
     .typed {
         font-size: 160%;
     }
+    .col-md-6 {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    iframe {
-        width: 450px;
-    }
-    #profile-img,
+    /* #profile-img,
     #about,
     #details,
     #address,
     #des,#skills,#services {
         width: 95%;
-    }
+    } */
     .typed {
         border-right: 0.5% solid rgba(255, 255, 255, .75);
         font-size: 100%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    iframe {
-        width: 320px;
-        height: 320px;
     }
 }
 

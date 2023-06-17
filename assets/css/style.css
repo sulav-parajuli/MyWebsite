@@ -108,16 +108,16 @@ a:hover {
     padding-top: 7%; 
 }
 
-/*For text animation goto index.js file*/
-    p.typed {
-        font-size: 200%;
-    }
-
 /*For background profile animation go to animation.css file*/
 
 p {
     font-family: 'Poppins', sans-serif;
     line-height: 200%;
+}
+
+/*For text animation goto index.js file*/
+p.typed {
+    font-size: 200%;
 }
 
 #soc-link {

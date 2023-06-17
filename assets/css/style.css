@@ -109,8 +109,7 @@ a:hover {
 }
 
 /*For text animation goto index.js file*/
-    .typed {
-        /* border-right: 0.5% solid rgba(255, 255, 255, .75); */
+    p.typed {
         font-size: 200%;
     }
 
@@ -420,7 +419,7 @@ footer {
     section {
         display: inline-block;
     }
-    .typed {
+    p.typed {
         font-size: 160%;
     }
     .col-md-6 {
@@ -430,7 +429,7 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-    .typed {
+    p.typed {
         border-right: 0.5% solid rgba(255, 255, 255, .75);
         font-size: 100%;
     }

@@ -10,10 +10,13 @@ function openslider() {
         document.querySelector(".menu").src = "assets/images/other/cancel.png";
         document.querySelector(".list-group").style.width = "250px";
     } else if (result == "cancel.png") {
-        document.querySelector(".list-group").style.width = "0px";
+        closeslider();
+    }
+}
+function closeslider(){
+    document.querySelector(".list-group").style.width = "0px";
         document.querySelector(".content").style.opacity = 1.0;
         document.querySelector(".menu").src = "assets/images/other/menu.png";
-    }
 }
 //dark and light mode
 function closemoon() {
@@ -118,11 +121,12 @@ window.onload = function() {
 //scroll reveal..
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
+    var x = window.matchMedia("(max-width: 868px)");
   
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 100;
+      var elementVisible = 150;
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -130,6 +134,14 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
+    //for not affecting menu bar button on smaller screen due to reveal animation.
+    if(x.matches){
+    setTimeout(function(){
+        for (var i = 0; i < reveals.length; i++) {
+            reveals[i].classList.remove("reveal");
+        }
+    }, 1000);
+}
   }
   
   window.addEventListener("scroll", reveal);

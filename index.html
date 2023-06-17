@@ -26,11 +26,11 @@
 <body>
     <!-- Slider Menu -->
     <div class="list-group">
-        <a href="#" class="moon fa-regular fa-moon" onclick="closemoon()"> Mode</a>
-        <a href="#profile">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About Me</a>
-        <a href="#portfolio">PortFolio</a>
+        <a href="#" class="moon fa-regular fa-moon" onclick="closemoon(),closeslider()"> Mode</a>
+        <a href="#" onclick="closeslider()">Home</a>
+        <a href="#contact" onclick="closeslider()">Contact</a>
+        <a href="#about" onclick="closeslider()">About Me</a>
+        <a href="#portfolio" onclick="closeslider()">PortFolio</a>
     </div>
     <div class="content">
         <!-- Navigation Menu -->
@@ -71,7 +71,7 @@
                 <span></span>
             </div></a>
         </div>
-        <section id="about">
+        <section id="about" class="reveal">
             <div id="profile-img">
                 <img id="main-img" src="assets/images/profile-img/sulav.jpg">
                 <div id="circle"></div>
@@ -174,7 +174,7 @@
                 </div>
                 </div>
         </section>
-        <section id="portfolio">
+        <section id="portfolio" class="reveal">
             <p id="section-text"><b>PORTFOLIO</b></p>
                 <h2 id="bottom-gap" style="text-align: center;">See my works</h2>
                     <div class="type">

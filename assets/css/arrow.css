@@ -1,6 +1,6 @@
 .arrow {
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     transform: rotate(360deg);
@@ -9,8 +9,8 @@
 
 .arrow span {
     display: block;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 2vmax;
+    height: 2vmax;
     border-bottom: 5px solid #999;
     border-right: 5px solid #999;
     transform: rotate(45deg);

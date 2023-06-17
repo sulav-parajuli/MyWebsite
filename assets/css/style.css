@@ -101,13 +101,20 @@ a:hover {
 #profile h1{
     text-align: center;
     font-size: 70px;
+    padding: 1%;
 }
 
 #profile {
     padding-top: 7%; 
 }
 
-/*For text animation and background profile animation go to animation.css file*/
+/*For text animation goto index.js file*/
+    .typed {
+        /* border-right: 0.5% solid rgba(255, 255, 255, .75); */
+        font-size: 200%;
+    }
+
+/*For background profile animation go to animation.css file*/
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -148,8 +155,8 @@ p {
 }
 
 .space{
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
 }
 
 /*For arrow animation goto arrow.css*/
@@ -204,7 +211,7 @@ section {
 
 .reveal{
     position: relative;
-    transform: translateY(100px);
+    transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease;
   }
@@ -404,13 +411,11 @@ footer {
     #profile-img,
     #about,
     #details,
-    #des,#skills,#services {
+    #des,#skills,div #type{
         display: block;
         width: auto;
+        padding-right: 3%;
         align-items: center;
-    }
-    #type{
-        display:block;
     }
     section {
         display: inline-block;

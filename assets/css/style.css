@@ -116,7 +116,7 @@ p {
 }
 
 /*For text animation goto index.js file*/
-p.typed {
+#profile .typed {
     font-size: 200%;
 }
 

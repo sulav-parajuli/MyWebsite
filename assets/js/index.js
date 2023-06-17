@@ -19,27 +19,29 @@ function closeslider(){
         document.querySelector(".menu").src = "assets/images/other/menu.png";
 }
 //dark and light mode
-function closemoon() {
-    if (document.querySelector(".moon").classList.value == 'moon fa-regular fa-moon') {
-        document.querySelector(".moon").classList.remove("fa-moon");
-        document.querySelector(".moon").classList.add("fa-sun");
-        document.querySelector(".moon").classList.remove("fa-regular");
-        document.querySelector(".moon").classList.add("fa-solid");
+function closemoon(moon) {
+    if(moon === 0){moon = ".list-group"}else{moon = "nav"}
+
+    if (document.querySelector(moon+" .moon").classList.value == 'moon fa-regular fa-moon') {
+        document.querySelector(moon+" .moon").classList.remove("fa-moon");
+        document.querySelector(moon+" .moon").classList.add("fa-sun");
+        document.querySelector(moon+" .moon").classList.remove("fa-regular");
+        document.querySelector(moon+" .moon").classList.add("fa-solid");
         document.querySelector("body").style.backgroundColor = "#1a1a1a";/*#332d2c*/
         document.querySelector("#profile").style.backgroundImage = "url('assets/images/background/skyscrapperdark.png')";
         document.querySelector("body").style.color = "#fff";
-        document.querySelector(".moon").style.color = "#fff";
+        document.querySelector(moon+" .moon").style.color = "#fff";
         document.querySelector(".github").style.color = "#fff";
         form("#1a1a1a","#fff");
-    } else if (document.querySelector(".moon").classList.value == 'moon fa-sun fa-solid') {
-        document.querySelector(".moon").classList.add("fa-regular");
-        document.querySelector(".moon").classList.remove("fa-solid");
-        document.querySelector(".moon").classList.remove("fa-sun");
-        document.querySelector(".moon").classList.add("fa-moon");
+    } else if (document.querySelector(moon+" .moon").classList.value == 'moon fa-sun fa-solid') {
+        document.querySelector(moon+" .moon").classList.add("fa-regular");
+        document.querySelector(moon+" .moon").classList.remove("fa-solid");
+        document.querySelector(moon+" .moon").classList.remove("fa-sun");
+        document.querySelector(moon+" .moon").classList.add("fa-moon");
         document.querySelector("body").style.backgroundColor = "#fff";
         document.querySelector("#profile").style.backgroundImage = "url('assets/images/background/backgroundwhitetheme.png')";
         document.querySelector("body").style.color = "#000";
-        document.querySelector(".moon").style.color = "rgb(36, 56, 92)";
+        document.querySelector(moon+" .moon").style.color = "rgb(36, 56, 92)";
         document.querySelector(".github").style.color = "#000";
         form("#fff","#1a1a1a");
     }
@@ -115,7 +117,7 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typed > .wrap { border-right: 0.08em solid #000000}";
+    css.innerHTML = ".typed > .wrap { border-right: solid #000000}";
     document.body.appendChild(css);
 };
 //scroll reveal..
@@ -146,6 +148,7 @@ function reveal() {
   
   window.addEventListener("scroll", reveal);
 
+  /*Filtering data list in portfolio */
   function list(a){
     document.querySelector("#portfolio-filters .filter-active").classList.remove("filter-active");
     document.querySelectorAll("#portfolio-filters li")[a].classList.add("filter-active");

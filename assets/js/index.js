@@ -153,18 +153,18 @@ function reveal() {
     document.querySelector("#portfolio-filters .filter-active").classList.remove("filter-active");
     document.querySelectorAll("#portfolio-filters li")[a].classList.add("filter-active");
     var b = document.querySelector("#portfolio-filters .filter-active").dataset.filter;
-    var n = document.querySelectorAll(".card").length;
+    var n = document.querySelectorAll(".portfolio-item").length;
     if(b === "*"){
         for(i=0;i<n;i++){
-            document.querySelectorAll(".card")[i].style.display = "flex";
+            document.querySelectorAll(".portfolio-item")[i].style.display = "flex";
         }
     }else{
         for(i=0;i<n;i++){
-            if(document.querySelectorAll(".card")[i].dataset.filter != b){
-                document.querySelectorAll(".card")[i].style.display = "none";
+            if(document.querySelectorAll(".portfolio-item")[i].dataset.filter != b){
+                document.querySelectorAll(".portfolio-item")[i].style.display = "none";
             }
             else{
-                document.querySelectorAll(".card")[i].style.display = "flex";
+                document.querySelectorAll(".portfolio-item")[i].style.display = "flex";
             }
         }
     }

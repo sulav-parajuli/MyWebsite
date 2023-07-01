@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--external css link-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/arrow.css">
     <link rel="stylesheet" href="assets/css/skills.css">
     <link rel="stylesheet" href="assets/css/buttonanimation.css">
@@ -32,35 +31,36 @@
         <a href="#about" onclick="closeslider()">About Me</a>
         <a href="#portfolio" onclick="closeslider()">PortFolio</a>
     </div>
+    <nav>
+        <div class="logo"><img src="assets/images/logo/default-log.png"></div>
+        <div class="list">
+            <ul>
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">PortFolio</a></li>
+        </ul> 
+        <a href="#" class="moon fa-regular fa-moon" onclick="closemoon(1)"></a>
+        <img class="menu" src="assets/images/other/menu.png" onclick="openslider()"> 
+        </div>   
+    </nav>
     <div class="content">
         <!-- Navigation Menu -->
-        <nav>
-            <div class="logo"><img src="assets/images/logo/default-log.png"></div>
-            <div class="list">
-                <ul>
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">PortFolio</a></li>
-            </ul> 
-            <a href="#" class="moon fa-regular fa-moon" onclick="closemoon(1)"></a>
-            <img class="menu" src="assets/images/other/menu.png" onclick="openslider()"> 
-            </div>   
-        </nav>
         <!-- <section id="slide"></section> -->
         <div id="profile">
             <h1>Sulav Parajuli</h1>
             <p class="typed" data-typed-items='[ "I am a Designer ","I am a Developer","I am a Freelancer ","I am a Photographer" ]'>
                 <span class="wrap"></span>
             </p>
-            <div id="soc-link">
-                <a href="https://github.com/sulav-parajuli" class="github"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/sulav.parajuli.5/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/_sulav_parajuli/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <!-- <a href="#" class="messenger"><i class="fa-brands fa-facebook-messenger"></i></a> -->
-                <!-- <a href="https://twitter.com/sulav_parajuli" class="twitter"><i class="fa-brands fa-twitter"></i></a> -->
-                 <a href="https://www.linkedin.com/in/sulav-parajuli-658388195/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:sulavparajuli82@gmail.com" class="mail"><i class="fa-solid fa-envelope"></i></a>
+            <div id="soc-link"><ul>
+                <li><a href="https://github.com/sulav-parajuli" class="github"><i class="fa-brands fa-github-alt"></i></a></li><!--<i class="fa-brands fa-github"></i>-->
+                <li><a href="https://www.facebook.com/sulav.parajuli.5/" class="facebook"><i class="fab fa-facebook-f"></i></a></li><!--<i class="fa-brands fa-facebook"></i>-->
+                <li><a href="https://www.instagram.com/_sulav_parajuli/" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <!-- <li><a href="#" class="messenger"><i class="fa-brands fa-facebook-messenger"></i></a></li> -->
+                <!-- <li><a href="https://twitter.com/sulav_parajuli" class="twitter"><i class="fa-brands fa-twitter"></i></a></li> -->
+                <li><a href="https://www.linkedin.com/in/sulav-parajuli-658388195/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li><!--<i class="fa-brands fa-linkedin"></i>-->
+                <li><a href="mailto:sulavparajuli82@gmail.com" class="mail"><i class=" fa-solid fa-envelope"></i></a></li>
+            </ul>
             </div>
                 <a href="#about"><button class="coolBeans">About</button></a>
                 <a href="#portfolio"><button class="coolBeans">PortFolio</button></a>
@@ -70,6 +70,7 @@
                 <span></span>
                 <span></span>
             </div></a>
+            <!-- <img class="side-img" src="OT827O0copy.jpg"></img> -->
         </div>
         <section id="about" class="reveal">
             <div id="profile-img">
@@ -305,6 +306,9 @@
             </form>
         </section>
         <!--Also create testimonial,blog,contact sections-->
+        <div class="container-top">
+            <a href="#" class="top"></a>
+          </div>
 </div>
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

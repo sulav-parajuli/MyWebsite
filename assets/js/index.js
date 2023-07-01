@@ -1,4 +1,4 @@
-// This Javascript file includes opening slider, "dark and light mode" and text Animation.
+// This Javascript file includes opening slider, "dark and light mode" and text Animation, portfolio filter.
 
 // Opening Slider
 function openslider() {
@@ -31,7 +31,6 @@ function closemoon(moon) {
         document.querySelector("#profile").style.backgroundImage = "url('assets/images/background/skyscrapperdark.png')";
         document.querySelector("body").style.color = "#fff";
         document.querySelector(moon+" .moon").style.color = "#fff";
-        document.querySelector(".github").style.color = "#fff";
         form("#1a1a1a","#fff");
     } else if (document.querySelector(moon+" .moon").classList.value == 'moon fa-sun fa-solid') {
         document.querySelector(moon+" .moon").classList.add("fa-regular");
@@ -42,7 +41,6 @@ function closemoon(moon) {
         document.querySelector("#profile").style.backgroundImage = "url('assets/images/background/backgroundwhitetheme.png')";
         document.querySelector("body").style.color = "#000";
         document.querySelector(moon+" .moon").style.color = "rgb(36, 56, 92)";
-        document.querySelector(".github").style.color = "#000";
         form("#fff","#1a1a1a");
     }
 }

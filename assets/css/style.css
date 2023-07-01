@@ -41,6 +41,7 @@
 .content{
     margin:0;
     padding:0;
+    display: grid;
 }
 
 nav {
@@ -102,11 +103,21 @@ a:hover {
     text-align: center;
     font-size: 70px;
     padding: 1%;
+    margin: 0;
 }
 
 #profile {
-    padding-top: 7%; 
+    padding-top: 6%; 
+    overflow-x: hidden;
+    color: #777;
+    text-align: center;
+    background-image: url("backgroundwhitetheme.png");
 }
+
+#profile ::before {
+     font-size: 50px;
+    font-style: normal;
+  }
 
 /*For background profile animation go to animation.css file*/
 
@@ -120,20 +131,23 @@ p {
     font-size: 200%;
 }
 
+.side-img{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    left: 30%;
+}
+
 #soc-link {
     text-align: center;
     display: flex;
     justify-content: center;
     gap:2%;
-    padding-bottom: 1%;
 }
-
-.github {
-    color: black;
-}
-
-.instagram {
-    color: #fe2c54;
+#soc-link ul, #soc-link li{
+    padding-bottom: 0;
 }
 
 .facebook,
@@ -145,16 +159,8 @@ p {
     text-decoration: none;
 }
 
-.facebook {
-    color: var(--blue);
-}
-
-.mail {
-    color: #237d7b;
-}
-
 .space{
-    width:250px;
+    width: 250px;
     height:250px;
 }
 
@@ -301,7 +307,7 @@ div#type{
   
   #portfolio .portfolio-item .portfolio-info h4 {
     font-size: 18px;
-    color: #666;
+    color: #777;
     font-weight: 600;
     margin-bottom: 10px;
   }
@@ -417,6 +423,44 @@ textarea {
     padding: 0 2px;
   }
 
+  /*To the top Arrow*/
+  .container-top {
+    --offset: 100px;
+    --fade: 120px;
+    
+    display: flex;
+    width: 55px;
+    justify-self: end;
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+    mask:linear-gradient(#0000 calc(100vh + var(--offset)),#000 calc(100vh + var(--offset) + var(--fade)));
+  }
+  
+  .top {
+    position: sticky;
+    margin-right:10px; 
+    
+    /* visual styling */
+    width:100%;
+    aspect-ratio:1;
+    background:#00a2ed;
+    border-radius:10px;
+  }
+  .top:before {
+    content:"";
+    position:absolute;
+    inset:30%;
+    transform:translateY(20%) rotate(-45deg);
+    border-top:5px solid #fff;
+    border-right:5px solid #fff;
+  }
+  
+  /* remove the below if you don't want smooth scrolling */
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
   /*Footer*/
 footer {
     background-color: var(--footer);
@@ -478,7 +522,7 @@ footer {
 
 @media screen and (max-width: 650px) {
     #profile .typed {
-        border-right: 0.5% solid rgba(255, 255, 255, .75);
+        border-right: 0.5% solid #777;
         font-size: 100%;
     }
 }

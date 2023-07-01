@@ -1,3 +1,76 @@
+/*social site animations*/
+#soc-link ul {
+  position: relative;
+  display: flex;
+}
+#soc-link ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+}
+#soc-link ul li a {
+  text-decoration: none;
+}
+#soc-link ul li a .fa-brands, #soc-link ul li a .fab, #soc-link ul li a .fa-solid {
+  /* font-size: 30px; */
+  color: #777;
+}
+#soc-link ul li a::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* font-size: 30px; */
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+#soc-link ul li:nth-child(1) a::before {
+  content: "\f113";
+  color: #000;
+  border-bottom: 4px solid #000;
+}
+#soc-link ul li:nth-child(3) a::before {
+  content: "\f16d";
+  background-image: linear-gradient(45deg, 
+    #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  border-bottom: 4px solid #dc2743;
+}
+#soc-link ul li:nth-child(5) a::before {
+  content: "\f0e0";
+  color: #237d7b;
+  border-bottom: 4px solid #237d7b;
+}
+/* #soc-link ul li:nth-child(3) a::before { 
+  content: "\f099";
+  color: #1DA1F2;
+  border-bottom: 4px solid #1DA1F2;
+} 
+/*of twitter*/
+/*ul li:nth-child(3) a::before {
+        content: "\f232";
+        color: #25D366;
+        border-bottom: 4px solid #25D366;
+    }
+    /*of whatsapp*/
+#soc-link ul li:nth-child(2) a::before {
+  content: "\f39e";
+  color: #1DA1F2;
+  border-bottom: 4px solid #1DA1F2;
+}
+#soc-link ul li:nth-child(4) a::before {
+  content: "\f0e1";
+  color: #0072b1;
+  border-bottom: 4px solid #0072b1;
+}
+#soc-link ul li:hover a::before {
+  height: 100%;
+}
+/*CoolBeans Button*/
 .coolBeans {
   border: 2px solid currentColor;
   border-radius: 3rem;

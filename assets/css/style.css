@@ -92,6 +92,7 @@ a:hover {
 .menu{
     display:none;
     position:fixed;
+    z-index: 9999;
 }
 
 .moon {
@@ -107,7 +108,7 @@ a:hover {
 }
 
 #profile {
-    padding-top: 6%; 
+    padding-top: 5%; 
     overflow-x: hidden;
     color: #777;
     text-align: center;

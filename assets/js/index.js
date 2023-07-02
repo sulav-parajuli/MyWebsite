@@ -121,7 +121,7 @@ window.onload = function() {
 //scroll reveal..
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
-    var x = window.matchMedia("(max-width: 868px)");
+    // var x = window.matchMedia("(max-width: 868px)");
   
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -135,13 +135,13 @@ function reveal() {
       }
     }
     //for not affecting menu bar button on smaller screen due to reveal animation.
-    if(x.matches){
-    setTimeout(function(){
-        for (var i = 0; i < reveals.length; i++) {
-            reveals[i].classList.remove("reveal");
-        }
-    }, 1000);
-}
+//     if(x.matches){
+//     setTimeout(function(){
+//         for (var i = 0; i < reveals.length; i++) {
+//             reveals[i].classList.remove("reveal");
+//         }
+//     }, 1000);
+// }
   }
   
   window.addEventListener("scroll", reveal);

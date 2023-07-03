@@ -248,6 +248,10 @@ h3 {
     font-family: 'Rubik', sans-serif;
 }
 
+h3 i{
+    padding-right: 1.2%;
+}
+
 #skills{
     width: 50%;
     padding-left: 3%;
@@ -479,6 +483,10 @@ footer {
 @media screen and (max-width: 868px) {
     .content .moon{
         visibility: hidden;
+    }
+    a:not([href]):not([tabindex]) {
+        color: white;
+        text-decoration: none;
     }
     #details{
         padding-bottom: 5%;

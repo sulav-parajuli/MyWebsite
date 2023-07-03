@@ -52,8 +52,6 @@ nav {
 }
 
 .logo {
-    height: 20%;
-    width: 20%;
     background-size: cover;
     align-items: center;
     padding-left: 3%;
@@ -64,20 +62,39 @@ nav {
 .list {
     margin: 0;
     display: flex;
-    gap: 10px;
+    gap:10px;
     padding-right: 3%;
 }
 
 .list ul{
     display: flex;
-    gap:10px;
+    gap:30px;
     list-style-type: none;
     padding-right: 5%;
+    padding-left: 0%;
     margin: 0;
 }
 
+.list ul li:hover{
+    background-color:#00a2ed;
+    border-radius: 20%;
+}
+
+.list ul li a:hover{
+    color: white;
+    font-size:17px;
+}
+
+.list ul li{
+    padding: 1%;
+}
+
 li{
-    padding-top: 4%;
+    padding-top: 3.8%;
+}
+
+ul{
+    padding-left: 0%;
 }
 
 a {

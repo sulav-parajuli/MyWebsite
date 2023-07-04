@@ -25,12 +25,13 @@
 <body>
     <!-- Slider Menu -->
     <div class="list-group">
-        <a class="moon fa-regular fa-moon" onclick="closemoon(0),closeslider()"> Mode</a>
+        <a class="moon fa-regular fa-moon" onclick="closemoon(0),closeslider()" alt="dark and light mode" title="Switch to dark mode"> Mode</a>
         <a href="#" onclick="closeslider()">Home</a>
         <a href="#contact" onclick="closeslider()">Contact</a>
-        <a href="#about" onclick="closeslider()">About Me</a>
+        <a href="#about" onclick="closeslider()">About</a>
         <a href="#portfolio" onclick="closeslider()">PortFolio</a>
     </div>
+    <!-- Navigation Bar Menu -->
     <nav>
         <div class="logo"><img src="assets/images/logo/default-log.png"></div>
         <div class="list">
@@ -40,12 +41,11 @@
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">PortFolio</a></li>
         </ul> 
-        <a class="moon fa-regular fa-moon" onclick="closemoon(1)"></a>
-        <img class="menu position-fixed float-right" src="assets/images/other/menu.png" onclick="openslider()"> 
+        <a class="moon fa-regular fa-moon" onclick="closemoon(1)" alt="dark and light mode" title="Switch to dark mode"></a>
+        <img class="menu position-fixed float-right" src="assets/images/other/menu.png" alt="Menu" title="Menu" onclick="openslider()"> 
         </div>   
     </nav>
     <div class="content">
-        <!-- Navigation Menu -->
         <!-- <section id="slide"></section> -->
         <div id="profile">
             <h1>Sulav Parajuli</h1>
@@ -53,17 +53,17 @@
                 <span class="wrap"></span>
             </p>
             <div id="soc-link"><ul>
-                <li><a href="https://github.com/sulav-parajuli" class="github"><i class="fa-brands fa-github-alt"></i></a></li><!--<i class="fa-brands fa-github"></i>-->
-                <li><a href="https://www.facebook.com/sulav.parajuli.5/" class="facebook"><i class="fab fa-facebook-f"></i></a></li><!--<i class="fa-brands fa-facebook"></i>-->
-                <li><a href="https://www.instagram.com/_sulav_parajuli/" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <!-- <li><a href="#" class="messenger"><i class="fa-brands fa-facebook-messenger"></i></a></li> -->
-                <!-- <li><a href="https://twitter.com/sulav_parajuli" class="twitter"><i class="fa-brands fa-twitter"></i></a></li> -->
-                <li><a href="https://www.linkedin.com/in/sulav-parajuli-658388195/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li><!--<i class="fa-brands fa-linkedin"></i>-->
-                <li><a href="mailto:sulavparajuli82@gmail.com" class="mail"><i class=" fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://github.com/sulav-parajuli" class="github" alt="github" title="github"><i class="fa-brands fa-github-alt"></i></a></li><!--<i class="fa-brands fa-github"></i>-->
+                <li><a href="https://www.facebook.com/sulav.parajuli.5/" class="facebook" alt="facebook" title="facebook"><i class="fab fa-facebook-f"></i></a></li><!--<i class="fa-brands fa-facebook"></i>-->
+                <li><a href="https://www.instagram.com/_sulav_parajuli/" class="instagram" alt="instagram" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <!-- <li><a href="#" class="messenger" alt="messenger" title="messenger"><i class="fa-brands fa-facebook-messenger"></i></a></li> -->
+                <!-- <li><a href="https://twitter.com/sulav_parajuli" class="twitter" alt="twitter" title="twitter"><i class="fa-brands fa-twitter"></i></a></li> -->
+                <li><a href="https://www.linkedin.com/in/sulav-parajuli-658388195/" class="linkedin" alt="linkedin" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li><!--<i class="fa-brands fa-linkedin"></i>-->
+                <li><a href="mailto:sulavparajuli82@gmail.com" class="mail" alt="mail" title="send mail"><i class=" fa-solid fa-envelope"></i></a></li>
             </ul>
             </div>
-                <a href="#about"><button class="coolBeans">About</button></a>
-                <a href="#portfolio"><button class="coolBeans">PortFolio</button></a>
+                <a href="#about" alt="About" title="Learn about Me"><button class="coolBeans">About</button></a>
+                <a href="#portfolio" alt="Portfolio" title="See my Works"><button class="coolBeans">PortFolio</button></a>
            <div class="space"></div>
             <a href="#about"><div class="arrow">
                 <span></span>
@@ -74,7 +74,7 @@
         </div>
         <section id="about" class="reveal">
             <div id="profile-img">
-                <img id="main-img" src="assets/images/profile-img/sulav.jpg">
+                <img id="main-img" src="assets/images/profile-img/sulav.jpg" alt="Sulav">
                 <div id="circle"></div>
             </div>
             <div id="profile-des">
@@ -192,7 +192,7 @@
                     <div class="row portfolio-container">
 
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-seo">
-                          <img src="assets/images/portfolio/swopnilstoregoogleseo.png" class="img-fluid" alt="Swopnil Store">
+                          <img src="assets/images/portfolio/swopnilstoregoogleseo.png" class="img-fluid" alt="Swopnil Store" title="Swopnil Store">
                           <div class="portfolio-info">
                             <h4>Google Business and SEO</h4>
                             <p>Swopnil Store</p>
@@ -202,7 +202,7 @@
                         </div>
               
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-web">
-                            <img src="assets/images/portfolio/swopnilstore.png" class="img-fluid" alt="Swopnil Store">
+                            <img src="assets/images/portfolio/swopnilstore.png" class="img-fluid" alt="Swopnil Store" title="Swopnil Store">
                             <div class="portfolio-info">
                               <h4>Web Development and Hosting</h4>
                               <p>Swopnil Store</p>
@@ -213,7 +213,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-design">
-                            <img src="assets/images/portfolio/graphics.png" class="img-fluid" alt="Swopnil Store">
+                            <img src="assets/images/portfolio/graphics.png" class="img-fluid" alt="Swopnil Store" title="Swopnil Store">
                             <div class="portfolio-info">
                               <h4>Graphics Designing and Boosting</h4>
                               <p>Swopnil Store</p>
@@ -223,7 +223,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-web">
-                            <img src="assets/images/portfolio/rajendrakhatri.png" class="img-fluid" alt="Rajendra Khatri">
+                            <img src="assets/images/portfolio/rajendrakhatri.png" class="img-fluid" alt="Rajendra Khatri" title="Rajendra Khatri">
                             <div class="portfolio-info">
                               <h4>PortFolio Website</h4>
                               <p>Rajendra Khatri</p>
@@ -233,7 +233,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-games" data-filter=".filter-web">
-                            <img src="assets/images/portfolio/drum-kit.png" class="img-fluid" alt="Drum Kit">
+                            <img src="assets/images/portfolio/drum-kit.png" class="img-fluid" alt="Drum Kit" title="Drum Kit">
                             <div class="portfolio-info">
                               <h4>Drum Kit</h4>
                               <p>Taught by Udemy Instructor(Angella Yu).</p>
@@ -243,7 +243,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-games">
-                            <img src="assets/images/portfolio/simon.png" class="img-fluid" alt="Simon Game">
+                            <img src="assets/images/portfolio/simon.png" class="img-fluid" alt="Simon Game" title="Simon Game">
                             <div class="portfolio-info">
                               <h4>Simon Game</h4>
                               <p>Repeated Sequence Mind Game</p>
@@ -260,8 +260,7 @@
             <div id="type">
                 <div id="des">
                     <h3>
-                        <!-- <i class="fa-solid fa-file-code"></i> -->
-                    <img src="assets/images/services/meta.png" width="20%" height="20%"/></h3>
+                    <img src="assets/images/services/meta.png" alt="Web Development and Digital Marketing" title="Web Development and Digital Marketing" width="20%" height="20%"/></h3>
                     <h3>Web Development and Digital Marketing</h3>
                     <p>
                         I have the ability to develop responsive websites for my clients, catering to their specific requirements while ensuring better SEO, cloud-based hosting, and enhanced security measures. </p> 
@@ -270,7 +269,7 @@
                 <div id="des">
                     <h3>
                         <!-- <i class="fa-solid fa-pen-to-square"></i> -->
-                        <img src="assets/images/services/responsive-design.png" width="20%" height="20%"/></h3>
+                        <img src="assets/images/services/responsive-design.png" alt="Responsive Web and Mobile Design" title="Responsive Web and Mobile Design" width="20%" height="20%"/></h3>
                     <h3>Web and Mobile Design</h3>
                     <p>I possess the ability to design responsive websites and mobile applications with flexible layouts for my clients, incorporating creative ideas and utilizing various platforms such as WordPress, JavaScript, Bootstrap,flutter and more.</p> 
                 </div>
@@ -279,7 +278,7 @@
                     <div id="des">
                         <h3>
                             <!-- <i class="fa-solid fa-gears"></i> -->
-                            <img src="assets/images/services/technical-support.png" width="20%" height="20%"/></h3>
+                            <img src="assets/images/services/technical-support.png" alt="Technical Support" title="Technical Support" width="20%" height="20%"/></h3>
                         <h3>Digital Consultant</h3>
                         <p>I can provide assistance to individuals and organizations in various aspects of the technology and digital world. Additionally, I am available to work as a freelancer, offering my expertise in these areas.</p> 
                     </div>
@@ -289,7 +288,7 @@
                         <path d="M8.447.276a.5.5 0 0 0-.894 0L7.19 1H2.5A1.5 1.5 0 0 0 1 2.5V10h14V2.5A1.5 1.5 0 0 0 13.5 1H8.809L8.447.276Z"/>
                         <path fill-rule="evenodd" d="M.5 11a.5.5 0 0 0 0 1h2.86l-.845 3.379a.5.5 0 0 0 .97.242L3.89 14h8.22l.405 1.621a.5.5 0 0 0 .97-.242L12.64 12h2.86a.5.5 0 0 0 0-1H.5Zm3.64 2 .25-1h7.22l.25 1H4.14Z"/>
                       </svg> -->
-                      <img src="assets/images/services/ux.png" width="20%" height="20%"/></h3>
+                      <img src="assets/images/services/ux.png" alt="Graphic Design" title="Graphic Design" width="20%" height="20%"/></h3>
                     <h3>Graphics Design</h3>
                     <p>
                         I possess the skills to design graphics at a professional level, catering to your specific requirements. </p> 
@@ -329,7 +328,7 @@
         </section>
         <!--Also create testimonial,blog,contact sections-->
         <div class="container-top">
-            <a href="#" class="top"></a>
+            <a href="#" class="top" title="To the Top"></a>
           </div>
 </div>
     <!--JQuery-->
@@ -341,7 +340,7 @@
 </body>
 <footer>
     <div>
-        <p class="footer-p">Designed and developed by Sulav Parajuli.
+        <p class="footer-p">Copyright ©2023. Designed and Developed by Sulav Parajuli.
         </p>
     </div>
 </footer>

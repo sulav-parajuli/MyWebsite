@@ -27,6 +27,7 @@ function closemoon(moon) {
         document.querySelector(moon+" .moon").classList.add("fa-sun");
         document.querySelector(moon+" .moon").classList.remove("fa-regular");
         document.querySelector(moon+" .moon").classList.add("fa-solid");
+        document.querySelector(moon+" a.moon").setAttribute('title', "Switch to Light Mode");
         document.querySelector("body").style.backgroundColor = "#1a1a1a";/*#332d2c*/
         document.querySelector("#profile").style.backgroundImage = "url('assets/images/background/skyscrapperdark.png')";
         document.querySelector("body").style.color = "#fff";
@@ -37,6 +38,7 @@ function closemoon(moon) {
         document.querySelector(moon+" .moon").classList.remove("fa-solid");
         document.querySelector(moon+" .moon").classList.remove("fa-sun");
         document.querySelector(moon+" .moon").classList.add("fa-moon");
+        document.querySelector(moon+" a.moon").setAttribute('title', "Switch to Dark Mode");
         document.querySelector("body").style.backgroundColor = "#fff";
         document.querySelector("#profile").style.backgroundImage = "url('assets/images/background/backgroundwhitetheme.png')";
         document.querySelector("body").style.color = "#000";

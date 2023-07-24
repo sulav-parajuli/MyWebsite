@@ -63,14 +63,14 @@ nav {
     margin: 0;
     display: flex;
     gap:10px;
-    padding-right: 3%;
+    padding-right: 5%;
 }
 
 .list ul{
     display: flex;
     gap:30px;
     list-style-type: none;
-    padding-right: 5%;
+    padding-right: 10%;
     padding-left: 0%;
     margin: 0;
 }

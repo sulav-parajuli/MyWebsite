@@ -136,6 +136,10 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
+    document.querySelector("#main-img").style.transform = "rotateY(360deg)";
+    document.querySelector("#main-img").style.transition = "transform 0.8s";
+    document.querySelector("#main-img").style.transform = "style(preserve-3d);";
+    document.querySelector("#main-img").style.transform = "delay(0.8s);";
     //for not affecting menu bar button on smaller screen due to reveal animation.
 //     if(x.matches){
 //     setTimeout(function(){

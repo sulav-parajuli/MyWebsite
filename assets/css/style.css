@@ -212,6 +212,7 @@ section {
     width: 63%;
     z-index: 2;
     position: relative;
+    transition:.5s ease-in-out;
 }
 
 .circle{
@@ -220,7 +221,7 @@ section {
     height: 100%;
     width: 60%;
     border: 5px solid #00a2ed;
-    background-color: #00a2ed;
+    background-color: transparent;
     display: inline-block;
     position:absolute;
     left: 25%;

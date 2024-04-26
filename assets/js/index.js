@@ -44,6 +44,7 @@ function closemoon(moon) {
     document.querySelector("body").style.color = "#fff";
     document.querySelector("nav").style.backgroundColor = "#149ddd";
     document.querySelector(moon + " .moon").style.color = "#fff";
+    document.querySelector(".logo").style.color = "#fff";
     document.querySelector(".lista").classList.add("text-white");
     document.querySelector(".listaa").classList.add("text-white");
     document.querySelector(".listaaa").classList.add("text-white");
@@ -64,6 +65,7 @@ function closemoon(moon) {
     document.querySelector("#profile").style.backgroundImage =
       "url('assets/images/background/backgroundwhitetheme.png')";
     document.querySelector("body").style.color = "#000";
+    document.querySelector(".logo").style.color = "#00a2ed";
     document.querySelector("nav").style.backgroundColor = "#eeeded";
     document.querySelector(".lista").classList.remove("text-white");
     document.querySelector(".listaa").classList.remove("text-white");

@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+.logo img {
+  max-width: 70px; /* Adjust the maximum width as per your requirement */
+  height: auto;
+}
+
 .list-group {
   height: 100%;
   background-color: black;
@@ -22,7 +27,7 @@
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 .list-group a {
@@ -42,6 +47,7 @@
   margin: 0;
   padding: 0;
   display: grid;
+  margin-top: 4.5% !important;
 }
 
 nav {
@@ -56,8 +62,10 @@ nav {
   background-size: cover;
   align-items: center;
   padding-left: 3%;
-  padding-top: 0.5%;
   margin: 0;
+  font-family: "Daddy Rewind", sans-serif;
+  font-size: 35px;
+  color: #00a2ed;
 }
 
 .list {
@@ -123,10 +131,11 @@ a:hover {
   font-size: 70px;
   padding: 1%;
   margin: 0;
+  color: #00a2ed;
 }
 
 #profile {
-  padding-top: 5%;
+  padding-top: 7%;
   overflow-x: hidden;
   color: #777;
   text-align: center;
@@ -531,6 +540,9 @@ footer {
 /*Media Queries*/
 
 @media screen and (max-width: 868px) {
+  #profile {
+    padding-top: 10%;
+  }
   .content .moon {
     visibility: hidden;
   }
@@ -589,8 +601,32 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
+  #profile {
+    padding-top: 15%;
+  }
   #profile .typed {
     border-right: 0.5% solid #777;
     font-size: 100%;
   }
+}
+
+.skill {
+  margin: 20px 0;
+}
+
+.skill-img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 10px; /* Adjust spacing between avatars */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+}
+
+.skill-img:hover {
+  transform: scale(1.1); /* Enlarge the avatar on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+#skills .container {
+  max-width: -webkit-fill-available !important;
 }

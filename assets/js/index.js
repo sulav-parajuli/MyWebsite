@@ -1,65 +1,41 @@
 // This Javascript file includes opening slider, "dark and light mode" and text Animation, portfolio filter.
 
-// Opening Slider
-function openslider() {
-  var str = document.querySelector(".menu").src;
-  var n = str.lastIndexOf("/");
-  var result = str.substring(n + 1);
-  if (result == "menu.png") {
-    document.querySelector(".content").style.opacity = 0.7;
-    document.querySelector(".menu").src = "assets/images/other/cancel.png";
-    document.querySelector(".list-group").style.width = "250px";
-  } else if (result == "cancel.png") {
-    closeslider();
-  }
-}
-function closeslider() {
-  document.querySelector(".list-group").style.width = "0px";
-  document.querySelector(".content").style.opacity = 1.0;
-  document.querySelector(".menu").src = "assets/images/other/menu.png";
-}
 //dark and light mode
-function closemoon(moon) {
-  if (moon === 0) {
-    moon = ".list-group";
-  } else {
-    moon = "nav";
-  }
-
+function closemoon() {
   if (
-    document.querySelector(moon + " .moon").classList.value ==
+    document.querySelector("nav .moon").classList.value ==
     "moon fa-regular fa-moon"
   ) {
-    document.querySelector(moon + " .moon").classList.remove("fa-moon");
-    document.querySelector(moon + " .moon").classList.add("fa-sun");
-    document.querySelector(moon + " .moon").classList.remove("fa-regular");
-    document.querySelector(moon + " .moon").classList.add("fa-solid");
+    document.querySelector("nav .moon").classList.remove("fa-moon");
+    document.querySelector("nav .moon").classList.add("fa-sun");
+    document.querySelector("nav .moon").classList.remove("fa-regular");
+    document.querySelector("nav .moon").classList.add("fa-solid");
     document
-      .querySelector(moon + " a.moon")
+      .querySelector("nav a.moon")
       .setAttribute("title", "Switch to Light Mode");
     document.querySelector("body").style.backgroundColor =
       "#1a1a1a"; /*#332d2c*/
     document.querySelector("#profile").style.backgroundImage =
       "url('assets/images/background/skyscrapperdark.png')";
     document.querySelector("body").style.color = "#fff";
-    document.querySelector("nav").style.backgroundColor = "#149ddd";
-    document.querySelector(moon + " .moon").style.color = "#fff";
+    document.querySelector("nav").style.backgroundColor = "#00a2ed"; /*149ddd*/
     document.querySelector(".logo").style.color = "#fff";
+    document.querySelector("nav .moon").classList.add("text-white");
     document.querySelector(".lista").classList.add("text-white");
     document.querySelector(".listaa").classList.add("text-white");
     document.querySelector(".listaaa").classList.add("text-white");
     document.querySelector(".listaaaa").classList.add("text-white");
     form("#1a1a1a", "#fff");
   } else if (
-    document.querySelector(moon + " .moon").classList.value ==
-    "moon fa-sun fa-solid"
+    document.querySelector("nav .moon").classList.value ==
+    "moon fa-sun fa-solid text-white"
   ) {
-    document.querySelector(moon + " .moon").classList.add("fa-regular");
-    document.querySelector(moon + " .moon").classList.remove("fa-solid");
-    document.querySelector(moon + " .moon").classList.remove("fa-sun");
-    document.querySelector(moon + " .moon").classList.add("fa-moon");
+    document.querySelector("nav .moon").classList.add("fa-regular");
+    document.querySelector("nav .moon").classList.remove("fa-solid");
+    document.querySelector("nav .moon").classList.remove("fa-sun");
+    document.querySelector("nav .moon").classList.add("fa-moon");
     document
-      .querySelector(moon + " a.moon")
+      .querySelector("nav a.moon")
       .setAttribute("title", "Switch to Dark Mode");
     document.querySelector("body").style.backgroundColor = "#fff";
     document.querySelector("#profile").style.backgroundImage =
@@ -67,11 +43,11 @@ function closemoon(moon) {
     document.querySelector("body").style.color = "#000";
     document.querySelector(".logo").style.color = "#00a2ed";
     document.querySelector("nav").style.backgroundColor = "#eeeded";
+    document.querySelector("nav .moon").classList.remove("text-white");
     document.querySelector(".lista").classList.remove("text-white");
     document.querySelector(".listaa").classList.remove("text-white");
     document.querySelector(".listaaa").classList.remove("text-white");
     document.querySelector(".listaaaa").classList.remove("text-white");
-    document.querySelector(moon + " .moon").style.color = "rgb(36, 56, 92)";
     form("#fff", "#1a1a1a");
   }
 }

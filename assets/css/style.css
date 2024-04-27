@@ -15,31 +15,16 @@
   height: auto;
 }
 
-.list-group {
-  height: 100%;
-  background-color: black;
-  margin: 0;
-  width: 0;
-  opacity: 0.9;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 100px;
-}
-
-.list-group a {
+nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: var(--white);
+  color: #00a2ed !important;
   display: block;
   transition: 0.3s;
 }
 
-.list-group .moon {
+.mode {
   display: none;
 }
 
@@ -538,7 +523,11 @@ footer {
 }
 
 /*Media Queries*/
-
+@media screen and (max-width: 991px) {
+  .mode {
+    display: inline-block;
+  }
+}
 @media screen and (max-width: 868px) {
   #profile {
     padding-top: 10%;

@@ -24,6 +24,18 @@ nav a {
   transition: 0.3s;
 }
 
+.navbar-collapse {
+  padding-left: 3%;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="%2300a2ed"><path stroke="%2300a2ed" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: #00a2ed;
+}
+
 .mode {
   display: none;
 }
@@ -232,6 +244,13 @@ section {
   padding-right: 3%;
 }
 
+.services {
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  gap: 5%;
+}
+
 #section-text {
   color: #ff0077;
   justify-items: center;
@@ -245,7 +264,7 @@ section {
 /*For button animation goto buttonanimation.css*/
 
 #about_details {
-  padding-left: 3%;
+  padding-left: 4.5%;
   justify-content: space-between;
 }
 
@@ -392,6 +411,7 @@ div#type {
 #des {
   width: 50%;
   padding-left: 0;
+  text-align: justify;
 }
 
 #services,
@@ -399,7 +419,7 @@ div#type {
 #contact {
   display: block;
   text-align: center;
-  padding: 3%;
+  padding: 4.5%;
 }
 
 #services {
@@ -527,8 +547,17 @@ footer {
   .mode {
     display: inline-block;
   }
-}
-@media screen and (max-width: 868px) {
+  .moon {
+    padding-left: 0%;
+  }
+  /* #des {
+    display: block;
+    width: auto;
+    padding-right: 3%;
+    align-items: center;
+  } */
+  /* }
+@media screen and (max-width: 868px) { */
   #profile {
     padding-top: 10%;
   }
@@ -609,6 +638,7 @@ footer {
   border-radius: 50%; /* Makes the image circular */
   margin: 10px; /* Adjust spacing between avatars */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  object-fit: contain;
 }
 
 .skill-img:hover {

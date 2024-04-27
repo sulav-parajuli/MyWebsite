@@ -21,6 +21,14 @@ function closemoon() {
     document.querySelector("nav").style.backgroundColor = "#00a2ed"; /*149ddd*/
     document.querySelector(".logo").style.color = "#fff";
     document.querySelector("nav .moon").classList.add("text-white");
+    // Get the navbar toggler icon element
+    const navbarTogglerIcon = document.querySelector(
+      ".navbar-dark .navbar-toggler-icon"
+    );
+    // Change the navbar toggler icon color
+    navbarTogglerIcon.style.backgroundImage = `url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="%23ffffff"><path stroke="%23ffffff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>')`;
+    document.querySelector(".navbar-dark .navbar-toggler").style.borderColor =
+      "#fff";
     document.querySelector(".lista").classList.add("text-white");
     document.querySelector(".listaa").classList.add("text-white");
     document.querySelector(".listaaa").classList.add("text-white");
@@ -44,6 +52,14 @@ function closemoon() {
     document.querySelector(".logo").style.color = "#00a2ed";
     document.querySelector("nav").style.backgroundColor = "#eeeded";
     document.querySelector("nav .moon").classList.remove("text-white");
+    // Get the navbar toggler icon element
+    const navbarTogglerIcon = document.querySelector(
+      ".navbar-dark .navbar-toggler-icon"
+    );
+    // Change the navbar toggler icon color
+    navbarTogglerIcon.style.backgroundImage = `url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="%2300a2ed"><path stroke="%2300a2ed" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>')`;
+    document.querySelector(".navbar-dark .navbar-toggler").style.borderColor =
+      "#00a2ed";
     document.querySelector(".lista").classList.remove("text-white");
     document.querySelector(".listaa").classList.remove("text-white");
     document.querySelector(".listaaa").classList.remove("text-white");

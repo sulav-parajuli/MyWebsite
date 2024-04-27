@@ -252,7 +252,7 @@ section {
 }
 
 #section-text {
-  color: #ff0077;
+  color: #00a2ed;
   justify-items: center;
   margin-bottom: 0%;
 }
@@ -411,7 +411,14 @@ div#type {
 #des {
   width: 50%;
   padding-left: 0;
+}
+
+#des p {
   text-align: justify;
+}
+
+#des h3 {
+  text-align: left;
 }
 
 #services,

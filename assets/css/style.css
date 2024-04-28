@@ -670,3 +670,9 @@ footer {
     width: 50% !important;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .skill .col-md-2 {
+    width: 100% !important;
+  }
+}

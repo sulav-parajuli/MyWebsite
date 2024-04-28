@@ -33,6 +33,8 @@ function closemoon() {
     document.querySelector(".listaa").classList.add("text-white");
     document.querySelector(".listaaa").classList.add("text-white");
     document.querySelector(".listaaaa").classList.add("text-white");
+    document.querySelectorAll(".postcard").classList.remove("dark");
+    document.querySelectorAll(".postcard").classList.add("text-white");
     form("#1a1a1a", "#fff");
   } else if (
     document.querySelector("nav .moon").classList.value ==
@@ -64,6 +66,8 @@ function closemoon() {
     document.querySelector(".listaa").classList.remove("text-white");
     document.querySelector(".listaaa").classList.remove("text-white");
     document.querySelector(".listaaaa").classList.remove("text-white");
+    document.querySelectorAll(".postcard").classList.remove("text-white");
+    document.querySelectorAll(".postcard").classList.add("dark");
     form("#fff", "#1a1a1a");
   }
 }

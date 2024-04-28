@@ -633,6 +633,10 @@ footer {
     border-right: 0.5% solid #777;
     font-size: 100%;
   }
+  .skill .col-md-2 {
+    flex: 0 0 auto;
+    width: 33.33333334% !important;
+  }
 }
 
 .skill {
@@ -655,4 +659,14 @@ footer {
 
 #skills .container {
   max-width: -webkit-fill-available !important;
+}
+
+.skill .col-md-2 {
+  width: 16.66666667%;
+}
+
+@media screen and (max-width: 450px) {
+  .skill .col-md-2 {
+    width: 50% !important;
+  }
 }

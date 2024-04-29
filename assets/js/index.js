@@ -33,8 +33,22 @@ function closemoon() {
     document.querySelector(".listaa").classList.add("text-white");
     document.querySelector(".listaaa").classList.add("text-white");
     document.querySelector(".listaaaa").classList.add("text-white");
-    document.querySelectorAll(".postcard").classList.remove("dark");
-    document.querySelectorAll(".postcard").classList.add("text-white");
+    document.querySelector("article.a").classList.remove("text-black");
+    document.querySelector("article.a").classList.add("text-white");
+    document.querySelector("article.b").classList.remove("text-black");
+    document.querySelector("article.b").classList.add("text-white");
+    document.querySelector("article.c").classList.remove("text-black");
+    document.querySelector("article.c").classList.add("text-white");
+    document.querySelector("article.d").classList.remove("text-black");
+    document.querySelector("article.d").classList.add("text-white");
+    document.querySelector("article.e").classList.remove("text-black");
+    document.querySelector("article.e").classList.add("text-white");
+    document.querySelector("article.f").classList.remove("text-black");
+    document.querySelector("article.f").classList.add("text-white");
+    document.querySelector("article.g").classList.remove("text-black");
+    document.querySelector("article.g").classList.add("text-white");
+    document.querySelector("article.h").classList.remove("text-black");
+    document.querySelector("article.h").classList.add("text-white");
     form("#1a1a1a", "#fff");
   } else if (
     document.querySelector("nav .moon").classList.value ==
@@ -66,8 +80,22 @@ function closemoon() {
     document.querySelector(".listaa").classList.remove("text-white");
     document.querySelector(".listaaa").classList.remove("text-white");
     document.querySelector(".listaaaa").classList.remove("text-white");
-    document.querySelectorAll(".postcard").classList.remove("text-white");
-    document.querySelectorAll(".postcard").classList.add("dark");
+    document.querySelector("article.a").classList.remove("text-white");
+    document.querySelector("article.a").classList.add("text-black");
+    document.querySelector("article.b").classList.remove("text-white");
+    document.querySelector("article.b").classList.add("text-black");
+    document.querySelector("article.c").classList.remove("text-white");
+    document.querySelector("article.c").classList.add("text-black");
+    document.querySelector("article.d").classList.remove("text-white");
+    document.querySelector("article.d").classList.add("text-black");
+    document.querySelector("article.e").classList.remove("text-white");
+    document.querySelector("article.e").classList.add("text-black");
+    document.querySelector("article.f").classList.remove("text-white");
+    document.querySelector("article.f").classList.add("text-black");
+    document.querySelector("article.g").classList.remove("text-white");
+    document.querySelector("article.g").classList.add("text-black");
+    document.querySelector("article.h").classList.remove("text-white");
+    document.querySelector("article.h").classList.add("text-black");
     form("#fff", "#1a1a1a");
   }
 }

@@ -421,72 +421,62 @@
         <div class="type">
           <ul id="portfolio-filters">
             <li data-filter="*" class="filter-active" onclick="list(0)">All</li>
-            <li data-filter=".filter-web" onclick="list(1)">Web</li>
-            <li data-filter=".filter-app" onclick="list(2)">Applications</li>
-            <li data-filter=".filter-seo" onclick="list(3)">SEO & Boosting</li>
-            <li data-filter=".filter-design" onclick="list(4)">Designing</li>
-            <li data-filter=".filter-games" onclick="list(5)">Games</li>
+            <li data-filter=".filter-web" onclick="list(1)">Web, Apps</li>
+            <li data-filter=".filter-design" onclick="list(2)">Designing</li>
+            <li data-filter=".filter-games" onclick="list(3)">Games</li>
           </ul>
         </div>
-
-        <!-- <div class="row portfolio-container">
-          <div
-            class="col-lg-4 col-md-6 portfolio-item"
-            data-filter=".filter-seo"
-          >
-            <img
-              src="assets/images/portfolio/swopnilstoregoogleseo.png"
-              class="img-fluid"
-              alt="Swopnil Store"
-              title="Swopnil Store"
-            />
-            <div class="portfolio-info">
-              <h4>Google Business and SEO</h4>
-              <p>Swopnil Store</p>
-              <a
-                href="assets/images/portfolio/swopnilstoregoogleseo.png"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link"
-                ><i class="fa-regular fa-plus"></i
-              ></a>
-              <a
-                href="https://www.google.com/search?q=swopnil+store"
-                class="details-link"
-                title="More Details"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-md-6 portfolio-item"
-            data-filter=".filter-design"
-          >
-            <img
-              src="assets/images/portfolio/graphics.png"
-              class="img-fluid"
-              alt="Swopnil Store"
-              title="Swopnil Store"
-            />
-            <div class="portfolio-info">
-              <h4>Graphics Designing and Boosting</h4>
-              <p>Swopnil Store</p>
-              <a
-                href="assets/images/portfolio/graphics.png"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link"
-                ><i class="fa-regular fa-plus"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/swopnil_store/"
-                class="details-link"
-                title="More Details"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div> -->
         <article
-          class="postcard blue text-black portfolio-item"
+          class="a postcard blue text-black portfolio-item"
+          data-filter=".filter-web"
+        >
+          <a
+            class="postcard__img_link"
+            href="https://github.com/sulav-parajuli/EthTix"
+          >
+            <img
+              class="postcard__img"
+              src="assets/images/portfolio/ethtix.png"
+              alt="EthTix"
+            />
+          </a>
+          <div class="postcard__text">
+            <h1 class="postcard__title blue">
+              <a href="https://github.com/sulav-parajuli/EthTix"
+                >Final Year Project- EthTix</a
+              >
+            </h1>
+            <div class="postcard__subtitle large">
+              <p>Decentralized Ticketing Application</p>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">
+              This is a Decentralized Ticketing Application that my team and I
+              created as our final year project. It is a blockchain-based
+              application that enables users to buy and sell tickets using
+              Sepolia Test Ethereum cryptocurrency. I was inspired to develop
+              this application after learning about blockchain technology, its
+              potential applications in various industries, and receiving
+              support from my team. <br />Technologies Used: Solidity, Ether.js,
+              React.js, Node.js, Hardhat Framework, Sepolia Test Eth, and more.
+            </div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-plus"></i>&nbsp;View</li>
+              <li class="tag__item">
+                <a href=""
+                  ><i class="fas fa-external-link-alt"></i>&nbsp;Visit Site</a
+                >
+              </li>
+              <li class="tag__item">
+                <a href="https://github.com/sulav-parajuli/EthTix"
+                  ><i class="fab fa-github"></i>&nbsp;Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article
+          class="b postcard blue text-black portfolio-item"
           data-filter=".filter-web"
         >
           <a class="postcard__img_link" href="https://rajendrakhatri.com.np">
@@ -523,7 +513,7 @@
           </div>
         </article>
         <article
-          class="postcard blue text-black portfolio-item"
+          class="c postcard blue text-black portfolio-item"
           data-filter=".filter-web"
         >
           <a
@@ -567,7 +557,7 @@
           </div>
         </article>
         <article
-          class="postcard blue text-black portfolio-item"
+          class="d postcard blue text-black portfolio-item"
           data-filter=".filter-web"
         >
           <a class="postcard__img_link" href="https://swopnilstore.com.np/">
@@ -586,8 +576,18 @@
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              This is a simple static grocery website with basic informations
-              about grocery store it's locations and contact details.
+              This is a simple static grocery website providing basic
+              information about the grocery store, including its locations and
+              contact details. The website is integrated with SEO through
+              <a
+                href="https://search.google.com/search-console/about"
+                style="color: #00a2ed"
+                >Google Search Console</a
+              >. Additionally, I have set up a
+              <a href="https://www.google.com/business/" style="color: #00a2ed"
+                >Google Business profile</a
+              >
+              for this business.
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item"><i class="fas fa-plus"></i>&nbsp;View</li>
@@ -605,7 +605,7 @@
           </div>
         </article>
         <article
-          class="postcard blue text-black portfolio-item"
+          class="e postcard blue text-black portfolio-item"
           data-filter=".filter-games"
         >
           <a
@@ -648,9 +648,8 @@
           </div>
         </article>
         <article
-          class="postcard blue text-black portfolio-item"
+          class="f postcard blue text-black portfolio-item"
           data-filter=".filter-games"
-          data-filter=".filter-web"
         >
           <a
             class="postcard__img_link"
@@ -695,50 +694,83 @@
           </div>
         </article>
         <article
-          class="postcard blue text-black portfolio-item"
-          data-filter=".filter-app"
+          class="g postcard blue text-black portfolio-item"
+          data-filter=".filter-design"
         >
           <a
             class="postcard__img_link"
-            href="https://github.com/sulav-parajuli/EthTix"
+            href="https://www.facebook.com/mac.it.club"
           >
             <img
               class="postcard__img"
-              src="assets/images/portfolio/ethtix.png"
-              alt="EthTix"
+              src="assets/images/portfolio/macithub.png"
+              alt="Graphics Designing"
             />
           </a>
           <div class="postcard__text">
             <h1 class="postcard__title blue">
-              <a href="https://github.com/sulav-parajuli/EthTix"
-                >Final Year Project- EthTix</a
-              >
+              <a href="">Graphic Designing</a>
             </h1>
             <div class="postcard__subtitle large">
-              <p>Decentralized Ticketing Application</p>
+              <p>Macithub</p>
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              This is a Decentralized Ticketing Application that my team and I
-              created as our final year project. It is a blockchain-based
-              application that enables users to buy and sell tickets using
-              Sepolia Test Ethereum cryptocurrency. I was inspired to develop
-              this application after learning about blockchain technology, its
-              potential applications in various industries, and receiving
-              support from my team. <br />Technologies Used: Solidity, Ether.js,
-              React.js, Node.js, Hardhat Framework, Sepolia Test Eth, and more.
+              These are simple social media graphic designs that I created for
+              the Macithub Student Club at my college. The designs showcase the
+              club's logo and provide information about the club's activities
+              and events.
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item"><i class="fas fa-plus"></i>&nbsp;View</li>
               <li class="tag__item">
-                <a href=""
+                <a href="https://www.facebook.com/mac.it.club"
                   ><i class="fas fa-external-link-alt"></i>&nbsp;Visit Site</a
                 >
               </li>
               <li class="tag__item">
-                <a href="https://github.com/sulav-parajuli/EthTix"
-                  ><i class="fab fa-github"></i>&nbsp;Github</a
+                <a href=""><i class="fab fa-github"></i>&nbsp;Github</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article
+          class="h postcard blue text-black portfolio-item"
+          data-filter=".filter-design"
+        >
+          <a
+            class="postcard__img_link"
+            href="https://www.facebook.com/swopnilstore"
+          >
+            <img
+              class="postcard__img"
+              src="assets/images/portfolio/swopnilstoregraphics.png"
+              alt="Graphics Designing"
+            />
+          </a>
+          <div class="postcard__text">
+            <h1 class="postcard__title blue">
+              <a href="">Graphic Designing</a>
+            </h1>
+            <div class="postcard__subtitle large">
+              <p>Swopnil Store</p>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">
+              These are simple social media graphic designs that I created for
+              Swopnil Store, a grocery store in Pokhara. The designs showcase
+              the store's logo and provide information about the store's
+              products and services.
+            </div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-plus"></i>&nbsp;View</li>
+              <li class="tag__item">
+                <a href="https://www.facebook.com/swopnilstore"
+                  ><i class="fas fa-external-link-alt"></i>&nbsp;Visit Site</a
                 >
+              </li>
+              <li class="tag__item">
+                <a href=""><i class="fab fa-github"></i>&nbsp;Github</a>
               </li>
             </ul>
           </div>

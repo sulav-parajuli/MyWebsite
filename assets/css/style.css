@@ -744,13 +744,13 @@ a:hover {
   font-size: 1.75rem;
   padding: 0;
   margin: 0;
-  text-align: justify;
+  text-align: left;
 }
 .postcard .postcard__subtitle p {
   /* font-size: 1.25rem; */
   padding: 0;
   margin: 0;
-  text-align: justify;
+  text-align: left;
 }
 .postcard .postcard__img {
   max-height: 180px;
@@ -916,15 +916,15 @@ a:hover {
 }
 
 .postcard .postcard__tagbox .blue.play:hover {
-  background: #0076bd;
+  background: #00a2ed;
 }
 
 .blue .postcard__title:hover {
-  color: #0076bd;
+  color: #00a2ed;
 }
 
 .blue .postcard__bar {
-  background-color: #0076bd;
+  background-color: #00a2ed;
 }
 
 .blue::before {

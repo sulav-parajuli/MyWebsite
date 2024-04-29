@@ -1,4 +1,4 @@
-// This Javascript file includes opening slider, "dark and light mode" and text Animation, portfolio filter.
+// This Javascript file includes "dark and light mode" and text Animation, portfolio filter.
 
 //dark and light mode
 function closemoon() {
@@ -232,3 +232,29 @@ function list(a) {
     }
   }
 }
+
+// To the top button functionality
+// Wait for the document to be fully loaded
+$(document).ready(function () {
+  // Attach scroll event listener to the window
+  $(window).scroll(function () {
+    // Check the scroll position
+    if ($(this).scrollTop() > 100) {
+      // Adjust 100 to the desired distance from the top
+      // If scrolled down, show the button
+      $("#scrollToTopBtn").fadeIn();
+    } else {
+      // If at the top, hide the button
+      $("#scrollToTopBtn").fadeOut();
+    }
+  });
+
+  // Attach click event handler to the button
+  $("#scrollToTopBtn").on("click", function () {
+    // Smoothly scroll to the top of the page
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+
+  // Initially hide the button when the page is loaded
+  $("#scrollToTopBtn").hide();
+});

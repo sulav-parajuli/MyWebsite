@@ -33,6 +33,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!--glightbox css link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
     <!--external css link-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/arrow.css" />
@@ -52,6 +57,8 @@
       src="https://kit.fontawesome.com/6c00edb918.js"
       crossorigin="anonymous"
     ></script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   </head>
 
   <body>
@@ -203,7 +210,7 @@
             to the world of technology.
           </p>
           <a href="#contact"><button class="coolBeans">Hire Me</button></a>
-          <a href="assets/other/SulavC.pdf" download
+          <a href="assets/other/CV_Sulav.pdf" download
             ><button class="coolBeans">My Resume</button></a
           >
         </div>
@@ -466,7 +473,7 @@
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item">
-                <a href="assets/images/portfolio/ethtix.png"
+                <a href="assets/images/portfolio/ethtix.png" class="glightbox"
                   ><i class="fas fa-plus"></i>&nbsp;View</a
                 >
               </li>
@@ -509,7 +516,9 @@
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item">
-                <a href="assets/images/portfolio/rajendrakhatri.png"
+                <a
+                  href="assets/images/portfolio/rajendrakhatri.png"
+                  class="glightbox"
                   ><i class="fas fa-plus"></i>&nbsp;View</a
                 >
               </li>
@@ -555,7 +564,7 @@
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item">
-                <a href="assets/images/portfolio/bibek.png"
+                <a href="assets/images/portfolio/bibek.png" class="glightbox"
                   ><i class="fas fa-plus"></i>&nbsp;View</a
                 >
               </li>
@@ -607,7 +616,9 @@
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item">
-                <a href="assets/images/portfolio/swopnilstore.png"
+                <a
+                  href="assets/images/portfolio/swopnilstore.png"
+                  class="glightbox"
                   ><i class="fas fa-plus"></i>&nbsp;View</a
                 >
               </li>
@@ -654,7 +665,7 @@
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item">
-                <a href="assets/images/portfolio/drum-kit.png"
+                <a href="assets/images/portfolio/drum-kit.png" class="glightbox"
                   ><i class="fas fa-plus"></i>&nbsp;View</a
                 >
               </li>
@@ -704,7 +715,7 @@
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item">
-                <a href="assets/images/portfolio/simon.png"
+                <a href="assets/images/portfolio/simon.png" class="glightbox"
                   ><i class="fas fa-plus"></i>&nbsp;View</a
                 >
               </li>
@@ -751,7 +762,7 @@
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item">
-                <a href="assets/images/portfolio/macithub.png"
+                <a href="assets/images/portfolio/macithub.png" class="glightbox"
                   ><i class="fas fa-plus"></i>&nbsp;View</a
                 >
               </li>
@@ -796,7 +807,9 @@
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__item">
-                <a href="assets/images/portfolio/swopnilstoregraphics.png"
+                <a
+                  href="assets/images/portfolio/swopnilstoregraphics.png"
+                  class="glightbox"
                   ><i class="fas fa-plus"></i>&nbsp;View</a
                 >
               </li>
@@ -939,6 +952,15 @@
         </button>
       </div>
     </div>
+
+    <script>
+      /**
+       * Initiate glightbox
+       */
+      const glightbox = GLightbox({
+        selector: ".glightbox",
+      });
+    </script>
   </body>
   <footer class="footer mt-auto py-3 bg-dark">
     <div>

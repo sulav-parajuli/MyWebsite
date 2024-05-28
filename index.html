@@ -914,26 +914,30 @@
           <!-- <br />Any valuable information between us
           must be safe. -->
         </p>
-        <form action="assets/forms/contact.php" method="post">
+        <form
+          onsubmit="handleFormSubmit(this); return false;"
+          role="form"
+          class="php-email-form p-3 p-md-4"
+        >
           <div class="form-controller">
-            <div class="input-field fname">
-              <input type="text" required />
+            <div class="input-field fname form-group">
+              <input type="text" name="fname" id="name" required />
               <label>Enter First Name</label>
             </div>
-            <div class="input-field lname">
-              <input type="text" required />
+            <div class="input-field lname form-group">
+              <input type="text" name="lname" id="name" required />
               <label>Enter Last Name</label>
             </div>
-            <div class="input-field email">
-              <input type="text" required />
-              <label>Email</label>
+            <div class="input-field email form-group">
+              <input type="email" name="email" id="email" required />
+              <label>Your Email</label>
             </div>
-            <div class="input-field sub">
-              <input type="text" required />
+            <div class="input-field sub form-group">
+              <input type="text" name="subject" id="subject" required />
               <label>Subject</label>
             </div>
-            <div class="input-field message">
-              <textarea required></textarea>
+            <div class="input-field message form-group">
+              <textarea name="message" rows="5" required></textarea>
               <label>Your Message</label>
             </div>
           </div>
@@ -960,6 +964,19 @@
       const glightbox = GLightbox({
         selector: ".glightbox",
       });
+    </script>
+    <script>
+      function handleFormSubmit(form) {
+        const name = encodeURIComponent(
+          form.fname.value + " " + form.lname.value
+        );
+        const email = encodeURIComponent(form.email.value);
+        const message = encodeURIComponent(form.message.value);
+        const subject = encodeURIComponent(form.subject.value);
+        const body = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+        const mailtoLink = `mailto:mail@sulav-parajuli.com.np?subject=${subject}&body=${body}`;
+        window.location.href = mailtoLink;
+      }
     </script>
   </body>
   <footer class="footer mt-auto py-3 bg-dark">

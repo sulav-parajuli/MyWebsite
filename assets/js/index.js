@@ -49,6 +49,8 @@ function closemoon() {
     document.querySelector("article.g").classList.add("text-white");
     document.querySelector("article.h").classList.remove("text-black");
     document.querySelector("article.h").classList.add("text-white");
+    document.querySelector("article.i").classList.remove("text-black");
+    document.querySelector("article.i").classList.add("text-white");
     form("#1a1a1a", "#fff");
   } else if (
     document.querySelector("nav .moon").classList.value ==
@@ -96,6 +98,8 @@ function closemoon() {
     document.querySelector("article.g").classList.add("text-black");
     document.querySelector("article.h").classList.remove("text-white");
     document.querySelector("article.h").classList.add("text-black");
+    document.querySelector("article.i").classList.remove("text-white");
+    document.querySelector("article.i").classList.add("text-black");
     form("#fff", "#1a1a1a");
   }
 }
